@@ -1,6 +1,6 @@
-NUMBER                  [one-plus-one.ml:3.1] 
+NUMBER 1                [one-plus-one.ml:3.1] 
 +                       [one-plus-one.ml:3.3] 
-NUMBER                  [one-plus-one.ml:3.5] 
+NUMBER 1                [one-plus-one.ml:3.5] 
 ;                       [one-plus-one.ml:3.6] 
 (                       [one-plus-one.ml:3.8] 
 )                       [one-plus-one.ml:3.9] 
