@@ -20,9 +20,9 @@ let zero = 0;
 
 let one = 1;
 
-fun even' odd x =
+fun preEven odd x =
       if (x < zero)
-	then even' odd (- x)
+	then preEven odd (- x)
       else if x == 0
 	then True
 	else odd (x - one);
@@ -32,9 +32,9 @@ fun odd x =
 	then odd (- x)
       else if x == 0
 	then False
-      else even' odd (x - one);
+      else preEven odd (x - one);
 
-let even = even' odd;
+let even = preEven odd;
 
 let n = 101;
 let even_n = even n;
