@@ -9,7 +9,7 @@ let _ = print (hello ^ ", " ^ world ^ "!\n");
 fun f n = {
     fun loop i =
 	  if i < n then {print " cruel"; loop (i + 1)}
-	  else Unit;
+	  else ();
     print (goodbye ^ ",");
     loop 0;
     print (" " ^ world ^ "!\n")
