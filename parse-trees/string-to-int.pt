@@ -66,7 +66,7 @@
                                                                                                                        (ExpVar i))))))))
                                                                                                (ExpApp (ExpCon Some)
                                                                                                        (ExpVar acc)))))
-                      (ExpIf (ExpBin (ExpInt 0) < (ExpVar sz)) (ExpApp (ExpApp (ExpVar loop) (ExpInt 0)) (ExpInt 0))
+                      (ExpIf (ExpBin (ExpInt 0) < (ExpVar sz)) (ExpApp (ExpVar loop) (ExpTuple (ExpInt 0) (ExpInt 0)))
                              (ExpCon None))))
       (ExpCase (ExpVar arguments)
                ((RuleCase (PatListCons (PatVar s) PatWild)

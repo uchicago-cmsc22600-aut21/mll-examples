@@ -28,7 +28,7 @@ fun rev xs = {
 fun tabulate (n, f) = {
       fun loop (i, acc) =
          if i <= n
-           then loop (i + 1) ((f i) :: acc)
+           then loop (i + 1, (f i) :: acc)
            else rev acc;
      if n < 0
        then fail "tabulate: n < 0"

@@ -1,1 +1,1 @@
-(Prog (BindExp (ExpBin (ExpInt 1) ("+" 6) (ExpInt 1))) (ExpTuple))
+(Prog (BindVal PatWild (ExpBin (ExpInt 1) ("+" 6) (ExpInt 1))) (ExpTuple))

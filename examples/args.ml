@@ -37,7 +37,6 @@ fun printArg arg = {
       print (snd arg);
       print "\n"};
 
-let args = arguments();
-let nArgs = length args;
+let nArgs = length arguments;
 let _ = print ("# args = " ^ (intToString nArgs) ^ "\n");
 appi printArg args

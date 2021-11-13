@@ -41,7 +41,7 @@ fun stringToInt s = {
 		{ Some i => loop (pos + 1, acc * 10 + i) }
 	       end
 	else Some acc;
-      if 0 < sz then loop 0 0
+      if 0 < sz then loop (0, 0)
       else None
     };
 

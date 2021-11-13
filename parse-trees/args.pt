@@ -60,8 +60,7 @@
                                                                                           (ExpApp (ExpVar snd)
                                                                                                   (ExpVar arg)))))
                       (ExpApp (ExpVar print) (ExpStr "\n"))))
-      (BindVal (PatVar args) (ExpApp (ExpVar arguments) (ExpTuple)))
-      (BindVal (PatVar nArgs) (ExpApp (ExpVar length) (ExpVar args)))
+      (BindVal (PatVar nArgs) (ExpApp (ExpVar length) (ExpVar arguments)))
       (BindVal PatWild
                (ExpApp (ExpVar print)
                        (ExpBin (ExpBin (ExpStr "# args = ") ^ (ExpApp (ExpVar intToString) (ExpVar nArgs))) ^
