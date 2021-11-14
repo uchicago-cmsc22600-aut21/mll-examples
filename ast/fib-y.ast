@@ -34,8 +34,8 @@
                                (TyFun (TyFun (TyFun (TyVar ("t1" 0)) (TyVar ("t2" 1)))
                                              (TyFun (TyCon ("Unit" 5) ()) (TyVar ("t2" 1))))
                                       (TyFun (TyCon ("Unit" 5) ()) (TyVar ("t2" 1))))) (P_VAR ("f" 24))
-                     (LET (FUN ("g" 25) ":" ("FORALL" (("t0" 2)) (TyFun (TyVar ("t0" 2)) (TyMeta ("$006A@1" 6))))
-                               (P_VAR ("z" 26)) (APPLY (APPLY (VAR ("y" 23)) (VAR ("f" 24))) (TUPLE)))
+                     (LET (FUN ("g" 25) ":" ("FORALL" (("t0" 2)) (TyFun (TyVar ("t0" 2)) (TyMeta 6))) (P_VAR ("z" 26))
+                               (APPLY (APPLY (VAR ("y" 23)) (VAR ("f" 24))) (TUPLE)))
                           (APPLY (VAR ("f" 24)) (VAR ("g" 25)))))
                 (LET (FUN ("fibY" 27) ":"
                           ("FORALL" (("t3" 3))

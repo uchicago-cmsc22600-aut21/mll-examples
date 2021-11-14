@@ -62,9 +62,8 @@
                                                 (TyCon ("List" 2) ((TyVar ("t4" 4))))))
                                (P_TUPLE (P_VAR ("n" 35)) (P_VAR ("f" 36)))
                                (LET (FUN ("loop" 37) ":"
-                                         (TyFun (TyTuple (TyCon ("Int" 1) ())
-                                                         (TyCon ("List" 2) ((TyMeta ("$00A3@1" 33)))))
-                                                (TyCon ("List" 2) ((TyMeta ("$00A3@1" 33)))))
+                                         (TyFun (TyTuple (TyCon ("Int" 1) ()) (TyCon ("List" 2) ((TyMeta 33))))
+                                                (TyCon ("List" 2) ((TyMeta 33))))
                                          (P_TUPLE (P_VAR ("i" 38)) (P_VAR ("acc" 39)))
                                          (COND (APPLY (VAR ("<=" 3)) (TUPLE (VAR ("i" 38)) (VAR ("n" 35))))
                                                (APPLY (VAR ("loop" 37))

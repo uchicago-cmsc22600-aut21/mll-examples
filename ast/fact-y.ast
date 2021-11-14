@@ -34,7 +34,7 @@
                                (TyFun (TyFun (TyFun (TyVar ("t0" 0)) (TyVar ("t1" 1)))
                                              (TyFun (TyVar ("t0" 0)) (TyVar ("t1" 1))))
                                       (TyFun (TyVar ("t0" 0)) (TyVar ("t1" 1))))) (P_VAR ("f" 24)) (P_VAR ("x" 25))
-                     (LET (FUN ("g" 26) ":" (TyFun (TyMeta ("$0062@1" 9)) (TyMeta ("$0061@1" 10))) (P_VAR ("x" 27))
+                     (LET (FUN ("g" 26) ":" (TyFun (TyMeta 9) (TyMeta 10)) (P_VAR ("x" 27))
                                (APPLY (APPLY (VAR ("y" 23)) (VAR ("f" 24))) (VAR ("x" 27))))
                           (APPLY (APPLY (VAR ("f" 24)) (VAR ("g" 26))) (VAR ("x" 25)))))
                 (LET (FUN ("factY" 28) ":"
