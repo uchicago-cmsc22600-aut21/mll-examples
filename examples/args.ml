@@ -39,4 +39,4 @@ fun printArg arg = {
 
 let nArgs = length arguments;
 let _ = print ("# args = " ^ (intToString nArgs) ^ "\n");
-appi printArg args
+appi printArg arguments
