@@ -1,0 +1,7 @@
+(PROG (("arguments" 0))
+      (E_FUN (("y" 1) (("f" 2))
+                      (E_FUN (("g" 3) (("z" 4))
+                                      (E_LET (("_t0001" 5) (E_APPLY ("y" 1) (V_VAR "f" 2)))
+                                             (E_LET (("_t0002" 6) (R_TUPLE)) (E_APPLY ("_t0001" 5) (V_VAR "_t0002" 6)))))
+                             (E_APPLY ("f" 2) (V_VAR "g" 3))))
+             (E_LET (("_t0003" 7) (R_TUPLE)) (E_LET (("_t0000" 8) (E_RET (V_VAR "_t0003" 7))) (E_RET (V_INT 0))))))

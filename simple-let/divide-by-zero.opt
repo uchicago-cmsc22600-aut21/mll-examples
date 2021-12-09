@@ -1,0 +1,6 @@
+(PROG (("arguments" 0))
+      (E_LET (("_" 1) (E_COND ("IntNEq" (V_INT 0) (V_INT 0))
+                              (E_LET (("_t0001" 2) (R_PRIM "IntDiv" (V_INT 42) (V_INT 0))) (E_RET (V_VAR "_t0001" 2)))
+                              (E_LET (("_t0002" 3) (R_CALL "_mll_fail" (V_STR "Divide by zero")))
+                                     (E_RET (V_VAR "_t0002" 3)))))
+             (E_LET (("_t0003" 4) (R_TUPLE)) (E_LET (("_t0000" 5) (E_RET (V_VAR "_t0003" 4))) (E_RET (V_INT 0))))))
